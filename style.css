@@ -11,7 +11,9 @@
 body{
     background-color: #1A5B35;
     margin: 0;
-    height: 1000px;
+    padding: 0;
+    height: 100vh!important;
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -20,30 +22,26 @@ body{
 }
 
 .img-first{
+    width: 98px;
+    height: 114px;
     position: absolute;
-    top: 0;
-    left: 0;
-}
-.img-second{
-    position: absolute;
-    bottom: 1px;
-    left: 0;
+    top: 15px;
+    left: -11px;
+    /*transform: rotate(8deg);*/
 }
 
-.img-fourth{
-    position: absolute;
-    top: 0;
-    right: 0;
+.img-third{
+    width: 40px;
+    height: 40px;
 }
 
 .music{
     font-family: "Gilroy", sans-serif;
+    font-style: normal;
     font-weight: 400;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-self: flex-end;
+    align-items: center;
     position: absolute;
     left: 10px;
     bottom: 70px;
@@ -56,30 +54,35 @@ body{
 }
 
 .wrapper{
-    width: 576px;
-    height: 785px;
-}
-
-.content{
+    width: 660px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.content h1{
+.wrapper h1{
     font-family: "Campanella", sans-serif;
+    font-style: normal;
     font-weight: 400;
-    font-size: 50px;
-    line-height: 115px;
+    font-size: 52px;
+    line-height: 83px;
     color: #CEB076;
-    margin: 0;
+    margin: 220px 16px 0 16px;
 }
 
-.content p{
+.wrapper p{
     font-family: "Gilroy", sans-serif;
+    font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 19px;
     color: #fff;
-    margin: 0;
+}
+
+.text_info{
+    margin: 12px 60px 0 60px;
 }
 
 .sign p{
@@ -93,15 +96,22 @@ body{
     align-items: center;
 }
 
+.sign img{
+    width: 85px;
+    height: 90px;
+}
+
 .logo img{
-    padding-top: 90px;
+    width: 90px;
+    height: 37px;
+    margin-top: 64px;
 }
 
 @media (max-width: 576px){
-    .content h1{
+    .wrapper h1{
         font-size: 30px;
     }
-    .content p{
+    .wrapper p{
         font-size: 12px;
     }
     .music{
